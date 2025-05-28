@@ -88,6 +88,8 @@ class LaporanController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $laporan = Laporan::findOrFail($id);
+        $laporan->delete();
+        return redirect('/laporan')->with('delete', 'Barang berhasil dihapus!');
     }
 }

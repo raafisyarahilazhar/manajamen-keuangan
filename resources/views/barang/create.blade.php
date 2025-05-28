@@ -16,6 +16,13 @@
         </nav>
         </div><!-- End Page Title -->
 
+        @if (session('success'))
+            <div class="alert alert-success alert-dismissible fade show mt-3 mb-3" role="alert">
+                {{ session('success') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
+
         <section class="section dashboard">
             <div class="row">
                 <div class="col-lg-12">

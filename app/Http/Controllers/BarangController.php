@@ -66,6 +66,8 @@ class BarangController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $barang = Barang::findOrFail($id);
+        $barang->delete();
+        return redirect('/barang')->with('delete', 'Barang berhasil dihapus!');
     }
 }

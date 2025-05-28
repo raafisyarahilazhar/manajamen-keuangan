@@ -15,7 +15,12 @@
             </ol>
         </nav>
     </div>
-
+    @if (session('delete'))
+        <div class="alert alert-danger alert-dismissible fade show mt-3 mb-3" role="alert">
+            {{ session('delete') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
     <section class="section">
         <div class="row">
             <div class="col-lg-12">
@@ -39,19 +44,20 @@
                                         <td>Rp{{ number_format($barang->modal, 0, ',', '.') }}</td>
                                         <td>Rp{{ number_format($barang->harga_jual, 0, ',', '.') }}</td>
                                         <td>{{ $barang->jumlah }}</td>
-                                        <td>
+                                        <td class="d-flex gap-2 align-items-center">
                                             <a href="#" class="text-warning">
                                                 <i class="bi bi-pencil"></i>
                                             </a>
-                                        </td>
-                                        <td>
-                                            <form action="#" method="POST">
+                                            <form action="/barang/{{ $barang->id }}" method="POST">
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" class="btn btn-link p-0 m-0 align-baseline">
                                                     <i class="text-danger bi bi-trash"></i>
                                                 </button>
                                             </form>
+                                        </td>
+                                        <td>
+                                            
                                         </td>
                                     </tr>
                                 @endforeach
