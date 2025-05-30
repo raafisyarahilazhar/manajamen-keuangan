@@ -11,11 +11,13 @@ Route::get('/', [HomeController::class, 'index'])->middleware('auth');
 
 Route::get('/barang', [BarangController::class, 'index'])->middleware('auth');
 Route::get('/create-barang', [BarangController::class, 'create'])->middleware('auth');
-Route::post('/create-barang', [BarangController::class, 'store'])->middleware('auth');
+Route::post('/create-barang', [BarangController::class, 'store'])->middleware('auth');   
+Route::delete('/barang/{id}', [BarangController::class, 'destroy'])->middleware('auth');   
 
 Route::get('/laporan', [LaporanController::class, 'index'])->middleware('auth');
 Route::get('/create-laporan', [LaporanController::class, 'create'])->middleware('auth');
 Route::post('/create-laporan', [LaporanController::class, 'store'])->middleware('auth');
+Route::delete('/laporan/{id}', [LaporanController::class, 'destroy'])->middleware('auth');
 
 // Route::get('/', function () {
 //     return view('home');

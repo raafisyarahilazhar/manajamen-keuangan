@@ -20,7 +20,7 @@ class BarangControllerTest extends TestCase
         ]);
 
         $response->assertRedirect(); // store() mengembalikan redirect
-        $this->assertDatabaseHas('barangs', [
+        $this->assertDatabaseHas('barang', [
             'nama_produk' => 'Produk Test',
             'modal' => 10000,
             'harga_jual' => 15000,

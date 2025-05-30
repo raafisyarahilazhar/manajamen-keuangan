@@ -34,7 +34,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6, {
   font-family: "Nunito", sans-serif;
 }
 
@@ -369,7 +369,12 @@ h6 {
   margin-right: 6px;
 }
 
-.logo span {
+.logo-dashboard img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+
+.logo-dashboard span {
   font-size: 26px;
   font-weight: 700;
   color: #012970;

@@ -9,6 +9,10 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+    <!-- Favicons -->
+  <link href="assets/img/sunforus-original.png" rel="icon">
+  <link href="assets/img/sunforus-original.png" rel="apple-touch-icon">
+
   <!-- Vendor CSS Files -->
   <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">

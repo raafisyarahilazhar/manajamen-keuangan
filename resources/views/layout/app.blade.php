@@ -36,7 +36,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="d-flex align-items-center justify-content-between">
-      <a href="/" class="logo d-flex align-items-center">
+      <a href="/" class="logo-dashboard d-flex align-items-center">
         <img src="assets/img/sunforus-original.png" alt="">
         <span class="d-none d-lg-block">SUNFORUS</span>
       </a>
@@ -59,7 +59,7 @@
           </a>
         </li><!-- End Search Icon-->
 
-        <li class="nav-item dropdown">
+        {{-- <li class="nav-item dropdown">
           <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
             <i class="bi bi-bell"></i>
             <span class="badge bg-primary badge-number">4</span>
@@ -131,8 +131,9 @@
 
           </ul><!-- End Notification Dropdown Items -->
 
-        </li><!-- End Notification Nav -->
-
+        </li> --}}
+        <!-- End Notification Nav -->
+{{-- 
         <li class="nav-item dropdown">
 
           <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
@@ -197,10 +198,10 @@
 
           </ul><!-- End Messages Dropdown Items -->
 
-        </li><!-- End Messages Nav -->
+        </li> --}}
+        <!-- End Messages Nav -->
 
         <li class="nav-item dropdown pe-3">
-
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">{{ Auth::user()->name }}</span>
@@ -298,7 +299,7 @@
       
       <li class="nav-heading">User</li>
       <li class="nav-item">
-        <form action="{{ route('logout') }}" method="POST" style="display: inline;">
+        <form action="{{ route('logout') }}" method="POST">
           @csrf
           <button type="submit" class="nav-link btn btn-link border-0 bg-transparent px-3">
             <i class="bi bi-box-arrow-right"></i>
