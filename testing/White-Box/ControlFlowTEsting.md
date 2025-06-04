@@ -23,14 +23,14 @@
 [End]
 
 
-#### ✅ Path
+#### Path
 
 | Path | Jalur | Deskripsi |
 |------|-------|-----------|
 | R1   | Start → Submit → Validasi OK → Hash → Simpan DB → Login → Redirect | Jalur normal berhasil |
 | R2   | Start → Submit → Validasi Gagal → Kembali ke Form | Gagal validasi input (e.g. email kosong) |
 
-#### 🧪 Test Case
+#### Test Case
 
 | TC     | Input | Expected Output | Path |
 |--------|-------|------------------|------|
@@ -58,7 +58,7 @@
 [End]
 
 
-#### ✅ Path
+#### Path
 
 | Path | Jalur | Deskripsi |
 |------|-------|-----------|
@@ -66,7 +66,7 @@
 | L2   | Start → Submit → Validasi Gagal → Kembali ke Form | Email/password tidak diisi atau invalid |
 | L3   | Start → Submit → Validasi OK → Kredensial Gagal → Kembali ke Form | Email/password salah |
 
-#### 🧪 Test Case
+#### Test Case
 
 | TC     | Input | Expected Output | Path |
 |--------|-------|------------------|------|
@@ -92,14 +92,14 @@
 [End]
 
 
-#### ✅ Path
+#### Path
 
 | Path | Alur | Deskripsi |
 |------|------|-----------|
 | P1   | Start → Submit → Validasi OK → Simpan → Redirect sukses | Jalur normal sukses |
 | P2   | Start → Submit → Validasi Gagal → Kembali ke form | Jalur gagal validasi |
 
-#### 🧪 Test Case
+#### Test Case
 
 - **Valid Input (P1)**
 
@@ -132,7 +132,7 @@
 
 ### d. Input Laporan
 
-#### 📈 Flowchart
+#### Flowchart
 [Start]
 ↓
 [Form Submit POST /laporan]
@@ -150,14 +150,14 @@
 [End]
 
 
-#### ✅ Path
+#### Path
 
 | Path | Alur | Deskripsi |
 |------|------|-----------|
 | P1   | Start → Submit → Validasi OK → Ambil barang → Hitung → Simpan → Redirect | Jalur normal sukses |
 | P2   | Start → Submit → Validasi Gagal → Kembali ke form | Jalur validasi gagal |
 
-#### 🧪 Test Case
+#### Test Case
 
 - **Valid Input (P1)**
 
